@@ -1,0 +1,46 @@
+# Das ist Gits benutzerspezifische Konfigurationsdatei.
+[core]
+	editor = code --wait
+	pager = delta
+	excludesfile = ~/.gitignore_global
+
+	# Make `git rebase` safer on macOS
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+[user]
+	email = hendrik.lorenz@gmail.com
+	name = Hendrik C. Lorenz
+[init]
+	defaultBranch = main
+[push]
+	default = tracking
+	gpgSign = if-asked
+[pull]
+	rebase = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+[interactive]
+	diffFilter = delta --color-only --features=interactive
+[alias]
+	undo = reset --soft HEAD~1
+	pom = push origin main
+	fap = fetch --all --prune
+
+	# Show verbose output about tags, branches, remotes, aliases and contributors
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+	aliases = config --get-regexp alias
+	contributors = shortlog --summary --numbered
+	new = !git init && git symbolic-ref HEAD refs/heads/main
+[github]
+	user = hendriklorenz
+[hub]
+	host = github.com
+[mergetool]
+	keepBackup = true
+[color]
+	ui = auto
+[delta]
+	features = decorations
