@@ -157,4 +157,4 @@ cask "iterm2"
 cask "zoom"
 cask "docker"
 cask "mitmproxy"
-cask "1password-cli"
+cask "1password-cli" if OS.mac?
