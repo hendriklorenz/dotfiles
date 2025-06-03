@@ -1,6 +1,6 @@
 # Das ist Gits benutzerspezifische Konfigurationsdatei.
 [core]
-	editor = code --wait
+	editor = vim
 	pager = delta
 	excludesfile = ~/.gitignore_global
 
