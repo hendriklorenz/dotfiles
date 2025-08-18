@@ -59,6 +59,7 @@ brew "libsass", args: ["HEAD"]
 brew "libyaml"
 brew "mtr"
 brew "openssl@1.1" if OS.mac?
+brew "mise"
 brew "p7zip"
 brew "pkg-config"
 brew "readline"
@@ -93,6 +94,7 @@ brew "htop"
 brew "httpie"
 brew "httrack"
 brew "hugo", args: ["HEAD"]
+brew "hurl"
 brew "jq"
 brew "mas" if OS.mac?
 brew "mhash"
