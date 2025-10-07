@@ -1,0 +1,2 @@
+colorscheme snazzy
+syntax on

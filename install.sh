@@ -34,6 +34,8 @@ fi
 ln -sf "$DOTFILES_PATH/git/.gitconfig" ~/.gitconfig
 ln -sf "$DOTFILES_PATH/git/.gitignore_global" ~/.gitignore_global
 ln -sf "$DOTFILES_PATH/starship/config.toml" ~/.config/starship.toml
+ln -sf "$DOTFILES_PATH/vim/.vimrc" ~/.vimrc
+ln -sf "$DOTFILES_PATH/vim/.vim" ~/.vim
 
 # this file will be sourced by .zshrc for more sensitive variables/settings
 touch ~/.zshrc.local
