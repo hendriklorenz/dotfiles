@@ -1,0 +1,95 @@
+{
+	"cmake.pinnedCommands": [
+		"workbench.action.tasks.configureTaskRunner",
+		"workbench.action.tasks.runTask"
+	],
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"editor.fontFamily": "GeistMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+	"terminal.integrated.fontSize": 12,
+	"editor.fontSize": 12,
+	"window.zoomLevel": 1.4,
+	"workbench.colorCustomizations": {
+		"terminal.background": "#282a36",
+		"terminalCursor.background": "#282a36",
+		"terminalCursor.foreground": "#97979b",
+		"terminal.selectionBackground": "#97979b33",
+		"terminal.foreground": "#eff0eb",
+		"terminal.ansiBlack": "#282a36",
+		"terminal.ansiRed": "#ff5c57",
+		"terminal.ansiGreen": "#5af78e",
+		"terminal.ansiYellow": "#f3f99d",
+		"terminal.ansiBlue": "#57c7ff",
+		"terminal.ansiMagenta": "#ff6ac1",
+		"terminal.ansiCyan": "#9aedfe",
+		"terminal.ansiWhite": "#f1f1f0",
+		"terminal.ansiBrightBlack": "#686868",
+		"terminal.ansiBrightRed": "#ff5c57",
+		"terminal.ansiBrightGreen": "#5af78e",
+		"terminal.ansiBrightYellow": "#f3f99d",
+		"terminal.ansiBrightBlue": "#57c7ff",
+		"terminal.ansiBrightMagenta": "#ff6ac1",
+		"terminal.ansiBrightCyan": "#9aedfe",
+		"terminal.ansiBrightWhite": "#eff0eb"
+	},
+	"workbench.colorTheme": "GitHub Dark",
+	"[python]": {
+		"editor.formatOnSave": false,
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+	"micropico.pyIgnore": [
+		"**/.picowgo",
+		"**/.micropico",
+		"**/.vscode",
+		"**/.gitignore",
+		"**/.git",
+		"**/.DS_Store",
+		"**/project.pico-go",
+		"**/env",
+		"**/venv",
+		"**/.venv",
+		"**/.idea",
+		"frontend",
+		".nvmrc",
+		"mother.code-workspace"
+	],
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"tailwindCSS.files.exclude": [
+		"**/.git/**",
+		"**/node_modules/**",
+		"**/.hg/**",
+		"**/.svn/**",
+		"**/dist/**"
+	],
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+	"kilo-code.allowedCommands": [
+		"git log",
+		"git diff",
+		"git show",
+		"pnpm test",
+		"pnpm lint",
+		"npm test",
+		"npm install",
+		"tsc"
+	],
+	"kilo-code.vsCodeLmModelSelector": {},
+	"javascript.format.enable": false,
+	"typescript.format.enable": false,
+	"kilo-code.deniedCommands": [],
+	"chat.mcp.serverSampling": {
+		"Global in Code: Linear": {
+			"allowedModels": [
+				"github.copilot-chat/gpt-4.1",
+				"github.copilot-chat/claude-sonnet-4",
+				"github.copilot-chat/gemini-2.5-pro",
+				"github.copilot-chat/gpt-4o",
+				"github.copilot-chat/o3-mini",
+				"github.copilot-chat/o4-mini"
+			]
+		}
+	},
+	"terminal.integrated.scrollback": 10000,
+	"git.openRepositoryInParentFolders": "never",
+	"terminal.integrated.sendKeybindingsToShell": true
+}

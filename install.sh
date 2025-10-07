@@ -48,6 +48,10 @@ if [[ "$OSTYPE" = "darwin"* ]]; then
   fi
   ln -sf "$DOTFILES_PATH/ssh/.ssh/config" ~/.ssh/config
   ln -sf "$DOTFILES_PATH/Brewfile" ~/Brewfile
+  if [[ ! -d ~/Library/Application\ Support/Code/User ]]; then
+    mkdir -p ~/Library/Application\ Support/Code/User
+  fi
+  ln -sf "$DOTFILES_PATH/vscode/settings.json" ~/Library/Application\ Support/Code/User/settings.json
 
   # suppress terminal login banners
   touch ~/.hushlogin
