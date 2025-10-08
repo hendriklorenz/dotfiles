@@ -29,11 +29,11 @@ fi
 if [[ ! -d ~/.config ]]; then
   mkdir -p ~/.config
 fi
-# ln -sf "$DOTFILES_PATH/zsh/.zshrc" ~/.zshrc
-# ln -sf "$DOTFILES_PATH/zsh/.zprofile" ~/.zprofile
+ln -sf "$DOTFILES_PATH/starship/config.toml" ~/.config/starship.toml
+ln -sf "$DOTFILES_PATH/zsh/.zshrc" ~/.zshrc
+ln -sf "$DOTFILES_PATH/zsh/.zprofile" ~/.zprofile
 ln -sf "$DOTFILES_PATH/git/.gitconfig" ~/.gitconfig
 ln -sf "$DOTFILES_PATH/git/.gitignore_global" ~/.gitignore_global
-ln -sf "$DOTFILES_PATH/starship/config.toml" ~/.config/starship.toml
 ln -sf "$DOTFILES_PATH/vim/.vimrc" ~/.vimrc
 ln -sf "$DOTFILES_PATH/vim/.vim" ~/.vim
 
