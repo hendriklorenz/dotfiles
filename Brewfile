@@ -47,7 +47,6 @@ brew "ack"
 brew "autoconf"
 brew "automake"
 brew "cmake"
-brew "dev-proxy"
 brew "ffmpeg"  #, args: ["with-libvpx"]
 brew "imagemagick"  #, args: ["with-webp"]
 brew "jemalloc"
@@ -55,7 +54,6 @@ brew "less"
 brew "libsass", args: ["HEAD"]
 brew "libyaml"
 brew "mtr"
-brew "openssl@1.1" if OS.mac?
 brew "mise"
 brew "p7zip"
 brew "pkg-config"
