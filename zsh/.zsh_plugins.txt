@@ -1,0 +1,23 @@
+getantidote/use-omz
+
+ohmyzsh/ohmyzsh path:lib
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/python
+
+ohmyzsh/ohmyzsh path:plugins/brew conditional:is-macos
+ohmyzsh/ohmyzsh path:plugins/macos conditional:is-macos
+
+belak/zsh-utils path:editor
+belak/zsh-utils path:history
+belak/zsh-utils path:prompt
+belak/zsh-utils path:utility
+
+zsh-users/zsh-completions path:src kind:fpath
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+zdharma-continuum/fast-syntax-highlighting
+
+wintermi/zsh-fnm
+
+MichaelAquilina/zsh-autoswitch-virtualenv
+
