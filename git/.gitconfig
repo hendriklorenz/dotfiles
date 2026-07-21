@@ -15,11 +15,13 @@
 [push]
 	default = tracking
 	gpgSign = if-asked
+	autoSetupRemote = true
 [pull]
 	rebase = true
 [rebase]
 	autoSquash = true
 	autoStash = true
+	updateRefs = true
 [interactive]
 	diffFilter = delta --color-only --features=interactive
 [alias]
@@ -44,3 +46,12 @@
 	ui = auto
 [delta]
 	features = decorations
+[merge "mergiraf"]
+	name = mergiraf
+	driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+
+[merge]
+	conflictStyle = diff3
+[advice]
+	forceDeleteBranch = false
+	skippedCherryPicks = false
