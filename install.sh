@@ -38,6 +38,12 @@ ln -sf "$DOTFILES_PATH/git/.gitignore_global" ~/.gitignore_global
 ln -sf "$DOTFILES_PATH/vim/.vimrc" ~/.vimrc
 ln -sf "$DOTFILES_PATH/vim/.vim" ~/.vim
 
+if [[ ! -d ~/.claude ]]; then
+  mkdir -p ~/.claude
+fi
+ln -sf "$DOTFILES_PATH/claude/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
+ln -sf "$DOTFILES_PATH/claude/.claude/settings.json" ~/.claude/settings.json
+
 # this file will be sourced by .zshrc for more sensitive variables/settings
 touch ~/.zshrc.local
 

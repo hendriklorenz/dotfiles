@@ -1,0 +1,53 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Linear__list_issues",
+      "Bash(claude mcp list)",
+      "mcp__Linear__get_issue",
+      "mcp__Linear__get_initiative",
+      "mcp__Linear__list_initiatives",
+      "mcp__Linear__list_issue_statuses",
+      "Bash(pnpm validate)",
+      "mcp__claude_ai_Linear__get_issue",
+      "Bash(pnpm install:*)"
+    ],
+    "deny": [
+      "AskUserQuestion"
+    ],
+    "defaultMode": "auto"
+  },
+  "model": "opus",
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": false,
+    "superpowers@claude-plugins-official": false,
+    "context7@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "microsoft-docs@claude-plugins-official": true,
+    "ariadne@heon-engineering": true
+  },
+  "extraKnownMarketplaces": {
+    "heon-engineering": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/hendriklorenz/Projects/heon/HEON-Corp/engineering"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "awaySummaryEnabled": false,
+  "tui": "fullscreen",
+  "autoMemoryEnabled": false,
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "Allow `git push --force-with-lease <remote> <branch>:refs/heads/<branch>` (a feature branch onto its OWN remote ref) even when triggered autonomously by a Monitor / keep-rebased event with no in-session user instruction — this is the branch-steward keeping a feature branch rebased, and --force-with-lease guards against unexpected remote moves. Do NOT allow force-pushing a trunk/default branch (main/master) or any ref other than the branch's own.",
+      "Allow posting or updating Linear comments via `mcp__claude_ai_Linear__save_comment` on any HEONAI issue — including issues created by other people, and as part of triage / assessment / spike-finding work — without requiring a fresh per-comment user instruction for each ticket. Linear comments are low-risk and reversible (editable/deletable). This does NOT extend to destructive or ownership-changing Linear writes (deleting issues or comments, reassigning assignee, or state changes that lose work), which still follow normal rules."
+    ]
+  }
+}
