@@ -1,5 +1,8 @@
 export PATH=$HOME/bin:$HOME/.local/bin:$HOMEBREW_PREFIX/opt/python3/libexec/bin:$PATH
 
+# Antigravity
+export PATH=$HOME/.antigravity/antigravity/bin:$PATH
+
 function is-macos() {
   [[ $OSTYPE == darwin* ]]
 }
@@ -34,4 +37,12 @@ esac
 # pnpm end
 
 source <(kubectl completion zsh)
+
+export SSH_AUTH_SOCK=~/.1password/agent.sock
+
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/hendriklorenz/.lmstudio/bin"
+# End of LM Studio CLI section
 
