@@ -58,6 +58,7 @@ brew "mtr"
 brew "mise"
 brew "p7zip"
 brew "pkg-config"
+brew "smartmontools"
 brew "readline"
 brew "sidneys/homebrew/unrar" if OS.mac?
 brew "ssh-copy-id", link: true
