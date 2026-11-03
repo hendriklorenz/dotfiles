@@ -38,6 +38,11 @@ ln -sf "$DOTFILES_PATH/git/.gitignore_global" ~/.gitignore_global
 ln -sf "$DOTFILES_PATH/vim/.vimrc" ~/.vimrc
 ln -sf "$DOTFILES_PATH/vim/.vim" ~/.vim
 
+if [[ ! -d ~/.config/herdr ]]; then
+  mkdir -p ~/.config/herdr
+fi
+ln -sf "$DOTFILES_PATH/herdr/config.toml" ~/.config/herdr/config.toml
+
 if [[ ! -d ~/.claude ]]; then
   mkdir -p ~/.claude
 fi
